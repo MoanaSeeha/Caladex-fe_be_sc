@@ -34,7 +34,8 @@ const app = express();
 //  }));
 //app.use(cors());
 let allowedSiteList = ['https://caladex.org', 'https://www.caladex.org', 'http://caladex.io', 'http://www.caladex.io'];
-if(process.env.NODE_ENV == 'local') allowedSiteList.push('http://localhost:3000')
+//if(process.env.NODE_ENV == 'local') 
+allowedSiteList.push('http://localhost:3000')
 app.use(cors({
    origin: allowedSiteList,
    methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']

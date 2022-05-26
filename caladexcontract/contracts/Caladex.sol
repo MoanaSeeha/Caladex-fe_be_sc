@@ -10,7 +10,7 @@ contract Caladex is Ownable{
     address public storeAddress;
 
     constructor() {
-        storeAddress = address(0x481B15eB2E2DA784A4667F48397aB22Af3730755);
+        storeAddress = address(0x3dF6149A499A6248CA756e611b849D912058C435);
     }
 
     function sendViaTransfer() public payable {
