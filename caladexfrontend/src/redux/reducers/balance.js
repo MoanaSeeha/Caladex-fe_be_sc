@@ -7,6 +7,7 @@ const INITIAL_STATE = {
     pair_balance : 0
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (state = INITIAL_STATE, action={}) => {
     switch(action.type) {
         case ActionTypes.TokenBalance :
